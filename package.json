@@ -1,0 +1,14 @@
+{
+  "name": "jitsi",
+  "version": "1.0.0",
+  "description": "Teste da api de Iframe do JitsiMeet",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nois",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
