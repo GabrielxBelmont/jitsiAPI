@@ -12,10 +12,10 @@ function Teleconsultor() {
     }
     return (
         <div class="row col-12 justify-content-center">
-            <script src='https://meet.jit.si/external_api.js'></script>
-
             <div id="iframe">
-                OI DOCTOR
+                <button onClick={func}>
+                    CLIQUE AQUI
+                </button>
             </div>
         </div>
     )

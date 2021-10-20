@@ -11,12 +11,12 @@ const Context = React.createContext({})
 
 export function GlobalProvider({children}){
 
-    // const [acesso, setAcesso] = React.useState("");
-        
-
+    const [teste, setTeste] = React.useState(false);
+    const [fila, setFila] = React.useState(null);
+    
     return <Context.Provider
         value={{
-            // acesso, setAcesso
+            teste, setTeste
         }}
         >
     </Context.Provider>

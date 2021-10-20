@@ -3,22 +3,33 @@ import Teleconsultor from "./teleconsultor";
 import React from "react";
 import { render } from "react-dom";
 import Link from 'next/link'
+import useGlobal from "../components/global";
+
 
 export default function Home() {
 
+    //const [teste, setTeste] = useGlobal();
+
+    // if(!teste){
+    //     console.log("é false")
+    // } else{
+    //    console.log("é true")
+    // }
+
     return (
         <div>
-            <script src='https://meet.jit.si/external_api.js'></script>
+            {console.log("Passou 2")}
             <div>
-                <Link class="btn" href="/client">
-                    ACESSO CLIENTE
-                </Link>
-            </div>
-            
-            <div>
-                <Link class="btn" href="/teleconsultor">
-                    ACESSO TELECONSULTOR
-                </Link>
+                <div>
+                    <a href="/teleconsultor">
+                        CLIQUE AQUI CLIENT
+                    </a>
+                </div>
+                <div>
+                    <a href="/client">
+                        CLIQUE AQUI DOCTOR
+                    </a>
+                </div>
             </div>
         </div>
     )
