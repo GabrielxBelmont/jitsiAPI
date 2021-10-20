@@ -2,6 +2,7 @@ import Client from "./client";
 import Teleconsultor from "./teleconsultor";
 import React from "react";
 import '../styles/style.css'
+import '../styles/classes.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import { GlobalProvider } from '../components/global'

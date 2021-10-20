@@ -21,12 +21,12 @@ export default function Home() {
             {console.log("Passou 2")}
             <div>
                 <div>
-                    <a href="/teleconsultor">
+                    <a href="/client">
                         CLIQUE AQUI CLIENT
                     </a>
                 </div>
                 <div>
-                    <a href="/client">
+                    <a href="/teleconsultor">
                         CLIQUE AQUI DOCTOR
                     </a>
                 </div>
