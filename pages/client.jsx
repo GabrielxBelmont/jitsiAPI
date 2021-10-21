@@ -4,9 +4,8 @@ import ReactDOM from 'react-dom';
 
 function Client() {
     const [show, setShow] = React.useState(false)
-    const [counter, setCounter] = React.useState(10)
+    const [counter, setCounter] = React.useState(3)
     const [none, setNone] = React.useState("")
-
     function func(){
         const domain = 'meet.jit.si';
         const options = {
@@ -20,11 +19,11 @@ function Client() {
         setShow(false);
     }
     React.useEffect(() => {
-        setTimeout(() => setShow(true), 10000);
-
-        
-      }, []);
-    
+        setTimeout(() => setShow(true), 3000);
+        document.addEventListener("click", function() {
+            console.log("batata", this)
+        })
+    }, []);
     React.useEffect(() => {
     const timer =
         counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
@@ -56,6 +55,7 @@ function Client() {
                 : null
             }
             {/* close-page */}
+            <button id="fj">fecha o jitsi</button>
             <div id="iframe">
                    {/* quando doc fechar a call, mata o que tem no warframe, quando o cllient fechar a call, mata o warframe */}
             </div>
@@ -64,4 +64,3 @@ function Client() {
 }
 
 export default Client;
-
